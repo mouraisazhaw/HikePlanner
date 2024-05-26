@@ -1,3 +1,5 @@
+
+
 # python -m flask --debug --app service run (works also in PowerShell)
 
 import datetime
@@ -9,6 +11,7 @@ import pandas as pd
 from azure.storage.blob import BlobServiceClient
 from flask import Flask, jsonify, request, send_file
 from flask_cors import CORS
+from calorie_calculator import calculate_calories_burned
 
 # init app, load model from storage
 print("*** Init and load model ***")
